@@ -18,14 +18,20 @@
 	</script>
         
 	<style>
+	#wrap {
+		width:100%;
+		margin: 0 auto;
+	}
 	#takePictureField {
 	}
 
 	#yourimage {
+		float:left;
 		width:50%;	
 	}
 	
 	#OCRtext {
+		float:right;
 		width: 50%;
 	}
 
@@ -33,13 +39,11 @@
 	</head>
 
 	<body>
-
 		<input type="file" capture="camera" accept="image/*" id="takePictureField">
-        
-		<img id="yourimage">
-
-		<div id="OCRtext"></div>
-		
+		<div id="wrap">
+			<img id="yourimage">
+			<div id="OCRtext"></div>
+		</div>		
     <script>
 	var desiredWidth;
 
