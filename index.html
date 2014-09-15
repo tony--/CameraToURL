@@ -64,7 +64,7 @@
 
 	function getText(){
 		var text = OCRImage($("#yourimage")[0]);
-		
+		$("#yourimage")[0].innerText = text;
 	}	
 	
     //Credit: https://www.youtube.com/watch?v=EPYnGFEcis4&feature=youtube_gdata_player
